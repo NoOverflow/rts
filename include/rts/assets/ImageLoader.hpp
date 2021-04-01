@@ -10,6 +10,8 @@
 
 #include "formats.hpp"
 
+namespace rts {
+
 class ImageLoader {
     public:
 
@@ -18,5 +20,7 @@ class ImageLoader {
     protected:
     private:
 };
+
+}
 
 #endif /* !IMAGELOADER_HPP_ */

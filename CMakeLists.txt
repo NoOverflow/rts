@@ -5,10 +5,12 @@ project(rts)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(rts_SOURCES
-    include/Assets/ImageLoader.hpp
-    src/Assets/ImageLoader.cpp
+set(sources
+    include/rts/assets/ImageLoader.hpp
+    src/assets/ImageLoader.cpp
+    include/rts/memory/MemUtils.hpp
+    src/memory/MemUtils.cpp
 )
 
-add_library(rts STATIC ${rts_SOURCES})
-target_include_directories(rts PUBLIC "./include")
+add_library(rts STATIC ${sources})
+target_include_directories(rts PUBLIC "include")

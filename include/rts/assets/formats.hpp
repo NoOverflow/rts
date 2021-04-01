@@ -11,6 +11,8 @@
 #include <cstdint>
 #include <vector>
 
+namespace rts {
+
 struct Color {
     std::uint8_t b;
     std::uint8_t g;
@@ -23,5 +25,7 @@ struct BMP {
     unsigned int height;
     std::vector<Color> pixels;
 };
+
+}
 
 #endif /* !IMAGEFORMATS_HPP_ */
