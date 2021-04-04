@@ -11,6 +11,7 @@ endif()
 set(sources
     include/rts/assets/ImageLoader.hpp
     src/assets/ImageLoader.cpp
+    include/rts/events/EventQueue.hpp
     include/rts/memory/MemUtils.hpp
     src/memory/MemUtils.cpp
 )
