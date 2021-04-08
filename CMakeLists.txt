@@ -9,11 +9,14 @@ set(CMAKE_CXX_FLAGS "-fPIC")
 endif()
 
 set(sources
+    include/rts/arch/ArchUtils.hpp
     include/rts/assets/ImageLoader.hpp
     src/assets/ImageLoader.cpp
     include/rts/events/EventQueue.hpp
     include/rts/memory/MemUtils.hpp
     src/memory/MemUtils.cpp
+    include/rts/physics/Physics2D.hpp
+    src/physics/Physics2D.cpp
 )
 
 add_library(rts STATIC ${sources})
